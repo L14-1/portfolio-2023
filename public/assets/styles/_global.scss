@@ -1,0 +1,43 @@
+.neon {
+    font-family : 'Tilt Neon'!important;
+    color : $neon-color;
+    // animation: flicker 1.5s infinite alternate;
+    animation: pulsate 2.5s infinite alternate;
+}
+
+.appearence {
+    opacity: 0;
+    animation: appearence 2s ease-in-out 0.5s forwards;
+}
+
+.outlined-text {
+    color : $bg-color;
+    text-shadow:
+        -1px -1px 0 $font-color,  
+        1px -1px 0 $font-color,
+        -1px 1px 0 $font-color,
+        1px 1px 0 $font-color;
+    &--neon {
+        @extend .outlined-text;
+        text-shadow:
+            -1px -1px 0 $neon-color,  
+            1px -1px 0 $neon-color,
+            -1px 1px 0 $neon-color,
+            1px 1px 0 $neon-color;
+    }
+}
+
+.section-title {
+    font-size: clamp(2rem, 15vw, 8rem);
+    margin : 2rem 0;
+    position: relative;
+    &::after {
+        content: attr(data-title);
+        @extend .outlined-text--neon;
+        font-size: clamp(3rem, 7.5vw, 12rem);
+        position: absolute;
+        top: -10%;
+        left : 10%;
+        z-index: -1;
+    }
+}
