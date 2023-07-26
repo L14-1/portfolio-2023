@@ -2,16 +2,16 @@
 // @import "/node_modules/font-awesome/css/brands.css";
 // @import "/node_modules/font-awesome/css/solid.css";
 
-@import "/public/assets/styles/_variables.scss";
-@import "/public/assets/styles/_reset.scss";
-@import "/public/assets/styles/_animations.scss";
-@import "/public/assets/styles/_global.scss";
+@import "./styles/_variables.scss";
+@import "./styles/_reset.scss";
+@import "./styles/_animations.scss";
+@import "./styles/_global.scss";
 
-@import "/public/assets/styles/components/_buttons.scss";
+@import "./styles/components/_buttons.scss";
 
-@import "/public/assets/styles/views/_welcome.scss";
-@import "/public/assets/styles/views/_experiences.scss";
-@import "/public/assets/styles/views/_about.scss";
+@import "./styles/views/_welcome.scss";
+@import "./styles/views/_experiences.scss";
+@import "./styles/views/_about.scss";
 
 
-@import "/public/assets/styles/accessibility/_reduced.scss";
+@import "./styles/accessibility/_reduced.scss";
