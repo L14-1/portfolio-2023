@@ -4,7 +4,7 @@ export function scrollSlide(): void {
         const titles = document.querySelectorAll<HTMLElement>('.section-title');
         if (titles.length === 0) return;
         for (const currentTitle of titles)  {
-            currentTitle.style.transform = `translateX(${scroll - 350 + (900 - currentTitle.offsetTop)}px)`;
+            currentTitle.style.transform = `translateX(${(scroll - 350 + (900 - currentTitle.parentElement!.offsetTop)) / 1.4}px)`;
         }
     })
 }

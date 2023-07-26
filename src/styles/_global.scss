@@ -35,6 +35,7 @@
         content: attr(data-title);
         @extend .outlined-text--neon;
         font-size: clamp(3rem, 7.5vw, 12rem);
+        white-space: nowrap;
         position: absolute;
         top: -30%;
         left : 5%;

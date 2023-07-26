@@ -21,3 +21,20 @@ export function cardAppearence(): void {
         }
     });
 }
+
+export function aboutAppearence(): void {
+    window.addEventListener('scroll', () => {
+        let scroll = window.scrollY;
+        const aboutSection = document.querySelector<HTMLElement>('.about');
+        const card = document.querySelector<HTMLElement>('.about__container__card');
+        if (!aboutSection || !card) return;
+        const aboutSectionTop = aboutSection.offsetTop;
+        let rotation = (aboutSectionTop - scroll) * 0.25;
+        if (scroll < aboutSectionTop - 300) rotation = 90;
+        if (scroll > aboutSectionTop) rotation = 0;
+        if (rotation < 0) rotation = 0;
+        if (rotation > 90) rotation = 90;
+        card.style.transform = `rotateX(${rotation}deg)`;
+        card.style.setProperty('--leftShine', `${rotation - 30}rem`);
+    });
+}

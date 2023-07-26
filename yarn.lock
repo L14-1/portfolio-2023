@@ -284,6 +284,11 @@ sass@^1.64.0:
     immutable "^4.0.0"
     source-map-js ">=0.6.2 <2.0.0"
 
+sensors@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/sensors/-/sensors-2.0.0.tgz#77ecbc6d45123ef68bb67214ab6f18f8bc0da984"
+  integrity sha512-ZBEP13BWrOycJBlJs4D+ikGKiNicKnXNvuTCDk7fSpTu+Ob/11wn4puRmXydCoggfhXV8yR/HHRCyI5pLIxwwg==
+
 "source-map-js@>=0.6.2 <2.0.0", source-map-js@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npmjs.org/source-map-js/-/source-map-js-1.0.2.tgz"
