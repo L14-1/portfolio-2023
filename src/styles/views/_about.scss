@@ -1,3 +1,75 @@
 .about {
-    height: 200vh;
+    height: 200vh; // TODO remove
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap : 2rem;
+    transform-style: preserve-3d;
+    &__container {
+        position: relative;
+        width: calc(100vw - 3rem);
+        max-width: 50rem;
+        &__shapes {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            z-index: 0;
+            &--left {
+                @extend .about__container__shapes;
+                background-color: $neon-color;
+                border-radius: 14px;
+                left: -7rem;
+                top : 5rem;
+                rotate : 160deg;
+            }
+            &--right {
+                @extend .about__container__shapes;
+                background-color: $neon-color-secondary;
+                bottom: -2rem;
+                right: -6rem;
+                border-radius: 50%;
+            }
+        }
+        &__card {
+            width: 100%;
+            height: 100%;
+            padding : 1.5rem;
+            border-radius: 1rem;
+            background-color: rgba(255,255,255,0.06);
+            -webkit-backdrop-filter: blur(20px);
+                    backdrop-filter: blur(20px);
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            align-items: center;
+            transform: rotateX(90deg);
+            z-index: 5;
+            overflow: hidden;
+            &__content {
+                text-align: justify;
+                z-index: 10;
+            }
+            &__img {
+                z-index: 10;
+                border-radius: 50%;
+                border : 2px solid $font-color;
+                img {
+                    width : 15rem;
+                    z-index: 15;
+                }
+            }
+            &::before {
+                content: '';
+                background: rgba($font-color, 0.1);
+                width: 0;
+                box-shadow: rgb(255, 255, 255) 0px 22px 70px 4px;
+                height: 100%;
+                top: 0%;
+                right: var(--leftShine, -25rem);
+                transform: skew(45deg);
+                position: absolute;
+              }
+        }
+    }
 }
