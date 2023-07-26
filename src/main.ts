@@ -1,6 +1,6 @@
 import './style.scss'
 import { sayHello } from './scripts/welcome/hello';
-import { scrollDisappearence, cardAppearence, aboutAppearence } from './scripts/welcome/scroll';
+import { scrollDown } from './scripts/welcome/scroll';
 import { scrollSlide } from './scripts/titles';
 
 console.log(
@@ -9,7 +9,5 @@ console.log(
 );
 
 sayHello();
-scrollDisappearence();
 scrollSlide();
-cardAppearence();
-aboutAppearence();
+scrollDown()
