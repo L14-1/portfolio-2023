@@ -1,0 +1,13 @@
+html::-webkit-scrollbar {
+    background-color: $bg-color;
+    width: 1rem;
+    &-thumb {
+        border: 0.25rem solid transparent;
+        background-clip: content-box;
+        border-radius: 0.5rem;
+        background-color: $neon-color;
+       &:hover {
+        border: 0.20rem solid transparent;
+        }
+    }
+}
