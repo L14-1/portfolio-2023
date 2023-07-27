@@ -1,5 +1,4 @@
 .about {
-    height: 200vh; // TODO remove
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,9 +13,10 @@
             width: 200px;
             height: 200px;
             z-index: 0;
+            animation: shapesFloating 12s linear infinite;
             &--left {
                 @extend .about__container__shapes;
-                background-color: $neon-color;
+                background-color: $neon-color-secondary;
                 border-radius: 14px;
                 left: -7rem;
                 top : 5rem;
@@ -24,7 +24,7 @@
             }
             &--right {
                 @extend .about__container__shapes;
-                background-color: $neon-color-secondary;
+                background-color: $neon-color;
                 bottom: -2rem;
                 right: -6rem;
                 border-radius: 50%;

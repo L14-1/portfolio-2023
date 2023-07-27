@@ -13,8 +13,6 @@
     "vite": "^4.4.5"
   },
   "dependencies": {
-    "Font-Awesome": "FortAwesome/Font-Awesome",
-    "font-awesome": "^4.7.0",
     "sass": "^1.64.0",
     "sensors": "^2.0.0"
   }

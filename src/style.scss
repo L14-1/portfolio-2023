@@ -1,6 +1,4 @@
-@import "/node_modules/font-awesome/css/fontawesome.css";
-@import "/node_modules/font-awesome/css/brands.css";
-@import "/node_modules/font-awesome/css/solid.css";
+
 
 @import "./styles/_variables.scss";
 @import "./styles/_reset.scss";
@@ -13,6 +11,7 @@
 @import "./styles/views/_welcome.scss";
 @import "./styles/views/_experiences.scss";
 @import "./styles/views/_about.scss";
+@import "./styles/views/_footer.scss";
 
 
 @import "./styles/accessibility/_reduced.scss";
