@@ -73,3 +73,21 @@
         box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
     }
 }
+
+@keyframes shapesFloating {
+    0% {
+        transform: translateY(0) translateY(0);
+    }
+    25% {
+        transform: translateY(-1rem) translateX(0);
+    }
+    50% {
+        transform: translateY(-1rem) translateX(-1rem);
+    }
+    75% {
+        transform: translateY(0.5rem) translateX(-1rem);
+    }
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+}
