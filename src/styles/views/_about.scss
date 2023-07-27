@@ -49,6 +49,9 @@
             &__content {
                 text-align: justify;
                 z-index: 10;
+                &--accent {
+                    font-weight: bold;
+                }
             }
             &__img {
                 z-index: 10;
