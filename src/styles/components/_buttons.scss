@@ -10,6 +10,9 @@
         @extend .btn;
         font-weight: 500;
         color : $font-color;
+        svg {
+            fill : $font-color;
+        }
         &:hover, &:focus {
             background-color: #865dff1a;
         }
