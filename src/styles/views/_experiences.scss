@@ -43,6 +43,7 @@
             padding: 0 0.5rem;
             text-align: justify;
             &--accent {
+                all : unset;
                 color: $neon-color;
             }
         }

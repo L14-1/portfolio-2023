@@ -50,6 +50,7 @@
                 text-align: justify;
                 z-index: 10;
                 &--accent {
+                    all : unset;
                     font-weight: bold;
                 }
             }
