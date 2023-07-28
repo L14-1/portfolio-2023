@@ -3,7 +3,7 @@ export function scrollDown(): void {
         const scroll = window.scrollY;
         scrollDisappearence(scroll);
         ExperienceCardAppearence(scroll);
-        aboutCardAppearence(scroll)
+        aboutCardAppearence(scroll);
     })
 }
 
