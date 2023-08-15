@@ -1,0 +1,87 @@
+.theme-switcher {
+    position : absolute;
+    top : 0;
+    left : 0;
+    width : 100vw;
+    z-index : 999;
+    &__light {
+        position: absolute;
+        --distance-from-top : 5rem;
+        --height-of-light : 3rem;
+        top : var(--distance-from-top);
+        left : 50vw;
+        transform: translateY(calc(-3 * var(--height-of-light)));
+        transition : transform 0.5s ease-in-out;
+        &::before {
+            content : '';
+            position: absolute;
+            width : 1px;
+            height : var(--distance-from-top);
+            background-color : black;
+            bottom : var(--height-of-light);
+            left : 50%;
+            transform : translateX(-50%);
+        }
+        &__orb {
+            position : absolute;
+            top : 50%;
+            left : 50%;
+            width : 3rem;
+            height : 3rem;
+            filter : blur(3rem);
+            transform: translate3d(-50%, -50%, 0);
+            background-color: var(--invert-bg-color);
+            opacity : 0;
+            transition : opacity 0.5s ease-in-out;
+            border-radius: 50%;
+            &--active {
+                animation: orbFiller 1.5s ease-in-out;
+            }
+        }
+        &--active {
+            transform: translateY(0);
+            .theme-switcher__light__orb {
+                opacity : 1;
+            }
+        }
+    }
+    &__btn {
+        all : unset;
+        --distance-from-top : 3rem;
+        --diameter-of-btn : 1rem;
+        cursor: pointer;
+        position : absolute;
+        top : var(--distance-from-top);
+        left : 70vw;
+        width : var(--diameter-of-btn);
+        height : var(--diameter-of-btn);
+        border-radius : 50%;
+        background-color : var(--font-color);
+        &::before {
+            content : '';
+            position: absolute;
+            width : 1px;
+            height : var(--distance-from-top);
+            background-color : black;
+            bottom : var(--diameter-of-btn);
+            left : 50%;
+            transform : translateX(-50%);
+        }
+    }
+    &:hover {
+        .theme-switcher__light {
+            transform: translateY(0);
+            transition : transform 0.5s ease-in-out;
+            &__orb {
+                opacity : 1;
+                transition : opacity 0.5s ease-in-out;
+            }
+        }
+    }
+}
+
+.animated-appearence {
+    #welcome {
+        animation: appearence 1s ease-in-out;
+    }
+}
