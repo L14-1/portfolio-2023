@@ -10,9 +10,9 @@
     &--accent {
         @extend .btn;
         font-weight: 500;
-        color : $font-color;
+        color : var(--font-color);
         svg {
-            fill : $font-color;
+            fill : var(--font-color);
         }
         overflow: hidden;
         &::after {
@@ -20,7 +20,7 @@
             width: 0;
             height: 0;
             border-radius: 50%;
-            background-color: $neon-color;
+            background-color: var(--neon-color);
             position: absolute;
             top: 50%;
             left: 50%;

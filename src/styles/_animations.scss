@@ -13,14 +13,14 @@
     0%, 18%, 22%, 25%, 53%, 57%, 100% {
   
         text-shadow:
-        0 0 4px $neon-color,
-        0 0 11px $neon-color,
-        0 0 19px $neon-color,
-        0 0 40px $neon-color-secondary,
-        0 0 80px $neon-color-secondary,
-        0 0 90px $neon-color-secondary,
-        0 0 100px $neon-color-secondary,
-        0 0 150px $neon-color-secondary;
+        0 0 4px var(--neon-color),
+        0 0 11px var(--neon-color),
+        0 0 19px var(--neon-color),
+        0 0 40px var(--neon-color-secondary),
+        0 0 80px var(--neon-color-secondary),
+        0 0 90px var(--neon-color-secondary),
+        0 0 100px var(--neon-color-secondary),
+        0 0 150px var(--neon-color-secondary);
     
     }
     
@@ -33,26 +33,26 @@
     100% {
       /* Larger blur radius */
       text-shadow:
-        0 0 4px $neon-color,
-        0 0 11px $neon-color,
-        0 0 19px $neon-color,
-        0 0 40px $neon-color-secondary,
-        0 0 80px $neon-color-secondary,
-        0 0 90px $neon-color-secondary,
-        0 0 100px $neon-color-secondary,
-        0 0 150px $neon-color-secondary;
+        0 0 4px var(--neon-color),
+        0 0 11px var(--neon-color),
+        0 0 19px var(--neon-color),
+        0 0 40px var(--neon-color-secondary),
+        0 0 80px var(--neon-color-secondary),
+        0 0 90px var(--neon-color-secondary),
+        0 0 100px var(--neon-color-secondary),
+        0 0 150px var(--neon-color-secondary);
     }
     0% {
       /* Smaller blur radius */
       text-shadow:
-        0 0 2px $neon-color,
-        0 0 4px $neon-color,
-        0 0 6px $neon-color,
-        0 0 10px $neon-color-secondary,
-        0 0 45px $neon-color-secondary,
-        0 0 55px $neon-color-secondary,
-        0 0 70px $neon-color-secondary,
-        0 0 80px $neon-color-secondary;
+        0 0 2px var(--neon-color),
+        0 0 4px var(--neon-color),
+        0 0 6px var(--neon-color),
+        0 0 10px var(--neon-color-secondary),
+        0 0 45px var(--neon-color-secondary),
+        0 0 55px var(--neon-color-secondary),
+        0 0 70px var(--neon-color-secondary),
+        0 0 80px var(--neon-color-secondary);
     }
 }
 
@@ -89,5 +89,22 @@
     }
     100% {
         transform: translateY(0) translateX(0);
+    }
+}
+
+@keyframes orbFiller {
+    to {
+        width : 150vw;
+        height : 300vh;
+        filter : blur(0)
+    }
+}
+
+@keyframes appearence {
+    from {
+        opacity : 0;
+    }
+    to {
+       opacity : 1;
     }
 }

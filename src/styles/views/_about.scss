@@ -16,7 +16,7 @@
             animation: shapesFloating 12s linear infinite;
             &--left {
                 @extend .about__container__shapes;
-                background-color: $neon-color-secondary;
+                background-color: var(--neon-color-secondary);
                 border-radius: 14px;
                 left: -7rem;
                 top : 5rem;
@@ -24,7 +24,7 @@
             }
             &--right {
                 @extend .about__container__shapes;
-                background-color: $neon-color;
+                background-color: var(--neon-color);
                 bottom: -2rem;
                 right: -6rem;
                 border-radius: 50%;
@@ -35,7 +35,7 @@
             height: 100%;
             padding : 1.5rem;
             border-radius: 1rem;
-            background-color: rgba(255,255,255,0.06);
+            background-color: var(--transparent-color-accent);
             -webkit-backdrop-filter: blur(20px);
                     backdrop-filter: blur(20px);
             z-index: 1;
@@ -57,7 +57,7 @@
             &__img {
                 z-index: 10;
                 border-radius: 50%;
-                border : 2px solid $font-color;
+                border : 2px solid var(--neon-color);
                 img {
                     width : 15rem;
                     z-index: 15;
@@ -65,7 +65,7 @@
             }
             &::before {
                 content: '';
-                background: rgba($font-color, 0.1);
+                background: rgba(var(--font-color), 0.1);
                 width: 0;
                 box-shadow: rgb(255, 255, 255) 0px 22px 70px 4px;
                 height: 100%;
