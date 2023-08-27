@@ -1,11 +1,11 @@
 html::-webkit-scrollbar {
-    background-color: $bg-color;
+    background-color: var(--bg-color);
     width: 1rem;
     &-thumb {
         border: 0.25rem solid transparent;
         background-clip: content-box;
         border-radius: 0.5rem;
-        background-color: $neon-color;
+        background-color: var(--neon-color);
        &:hover {
         border: 0.20rem solid transparent;
         }

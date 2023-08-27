@@ -1,5 +1,26 @@
-$bg-color : #191825;
-$font-color : rgba(255, 255, 255, 0.87);
 
-$neon-color : #E384FF;
-$neon-color-secondary : #865DFF;
+:root, :root.dark {
+    --bg-color : #191825;
+    --invert-bg-color : #EDEEF7;
+    --font-color : #e1e1e3;
+
+    --neon-color : #E384FF;
+    --neon-color-secondary : #865DFF;
+
+    --box-shadow-color : rgba(0, 0, 0, 0.5);
+    --transparent-color-accent : rgba(255,255,255,0.06);
+}
+
+:root.light {
+    --bg-color : #EDEEF7;
+    --invert-bg-color : #191825;
+    --font-color : #424244;
+
+    --neon-color : #7868E6;
+    --neon-color-secondary : #B8B5FF;
+
+    --box-shadow-color : rgba(142, 142, 142, 0.5);
+    --transparent-color-accent : rgba(228, 228, 228, 0.21);
+}
+
+// light color palette : https://colorhunt.co/palette/e4fbffb8b5ff7868e6edeef7
