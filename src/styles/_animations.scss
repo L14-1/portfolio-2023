@@ -56,24 +56,6 @@
     }
 }
 
-@keyframes cardAppearence {
-    0% {
-        opacity: 0;
-        transform: scale(0.5);
-        box-shadow: 0 0 1rem rgba(0, 0, 0, 0);
-    }
-    50% {
-        opacity: 1;
-        transform: scale(1);
-        box-shadow: 0 0 1rem rgba(0, 0, 0, .25);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
-    }
-}
-
 @keyframes shapesFloating {
     0% {
         transform: translateY(0) translateY(0);
@@ -97,14 +79,5 @@
         width : 150vw;
         height : 300vh;
         filter : blur(0)
-    }
-}
-
-@keyframes appearence {
-    from {
-        opacity : 0;
-    }
-    to {
-       opacity : 1;
     }
 }
